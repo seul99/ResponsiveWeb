@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1, maximum-scale=1, user-scalable=1">
+    <title>FLAT DESIGN - 플랫 디자인이란?</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="shortcuticon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/flat-design-touch.png">
+    <script src="js/jquery.min.js"></script>
+    <style>
+        /* 모바일용 CSS */
+        /* 서브 헤더 영역 */
+        .sub_header_section{
+            order:3;
+            padding:48px 0;
+            padding:3.000rem 0;
+            text-align: center;
+            background: #219af7;
+        }
+
+        .sub_header_section h2{
+            margin-bottom: 12px;
+            margin-bottom: 0.750rem;
+            font-size: 1.313em;
+            font-size: 1.313rem;
+            color:#fff;
+        }
+
+        .breadcrum_list li{
+            display: inline;
+            font-size: 0.813em;
+            font-size: 0.813rem;
+            font-weight: bold;
+        }
+        /* 콘텐츠 영역 CSS */
+        .content_section{
+            order:4;
+            padding:20px;
+            padding:1.250rem;
+            background: #fff;;
+        }
+        .content_section > div{
+            margin-top: 60px;
+            margin-top: 3.750rem;
+        }
+
+        .content_section > div:first-child{
+            margin-top: 0;
+        }
+
+        .content_row_1{
+            text-align: center;
+        }
+
+        .content_row_1 img{
+            max-width: 100%;
+        }
+
+        .content_row_1 h3{
+            margin: 26px 0 14px 0;
+            margin: 1.625rem 0 0.875rem 0;
+            font-size: 1.626em;
+            font-size: 1.626rem;
+            color: #333;
+        }
+
+        .content_row_1 p{
+            font-size: 0.938em;
+            font-size: 0.938rem;
+            line-height: 26px;
+            line-height: 1.625rem;
+            color:#444;
+        }
+
+        .content_row_2 > article{
+            margin-top: 40px;
+            margin-top: 2.500rem;
+            text-align: center;
+        }
+
+        .content_row_2 > article:first-child{
+            margin-top: 0;
+        }
+
+        .content_row_2 img{
+            max-width: 100%;
+        }
+
+        .content_row_2 h4{
+            margin: 26px 0 14px 0;
+            margin: 1.625rem 0 0.875rem 0;
+            font-size: 1.188em;
+            font-size: 1.188rem;
+            color: #333;
+        }
+
+        .content_row_2 p{
+            font-size: 0.813em;
+            font-size: 0.813rem;
+            line-height: 21px;
+            line-height: 1.313rem;
+            color: #444;
+        }
+
+        .content_row_3 h4{
+            margin-bottom: 20px;
+            margin-bottom: 1.250rem;
+            padding-bottom: 8px;
+            padding-bottom: 0.500rem;
+            font-size: 1.188em;
+            font-size: 1.188rem;
+            border-bottom: 3px solid #2ecc71;
+            color: #333;
+        }
+
+        .para p:first-child{
+            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
+        }
+
+        .para p{
+            font-size: 0.813em;
+            font-size: 0.813rem;
+            line-height: 21px;
+            line-height: 1.313rem;
+            color: #444;
+        }
+        /* 푸터 영역 CSS */
+        .footer{
+            order: 5;
+        }
+        /* 기본 CSS */
+        #wrap{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        #wrap section{
+            box-sizing: border-box;
+        }
+        /* 태블릿용 CSS */
+        @media all and (min-width: 768px){
+            .content_section{
+                padding: 40px;
+                padding: 2.500rem;
+            }
+        }
+        /* PC용 CSS */
+        @media all and (min-width: 960px){
+            #wrap{
+                position: relative;
+                width: 90%;
+            }
+            /* 서브 헤더 영역 */
+            .sub_header_section{
+                order: 2;
+            }
+
+            /* 콘텐츠 영역  */
+            .content_section{
+                order: 3;
+                padding: 60px;
+                padding: 3.750rem;
+            }
+            /* 푸터 영역 */
+            .footer{
+                order: 4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section class="info_section">
+            <ul class="info_list">
+                <li><a href="index.html"><img src="images/s_images/info_icon_01.png" alt=""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_02.png" alt=""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_03.png" alt=""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_04.png" alt=""></a></li>
+            </ul>
+        </section>
+        <header class="header">
+            <h1 class="logo">
+                <a href="index.html">flat<br>design</a>
+            </h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="index.html">홈</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="introduce.html">플랫 디자인이란?</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="gallery.html">갤러리</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="broard.html">문희 사항</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                </ul>
+            </nav>
+            <span class="menu_toggle_btn">전체 메뉴 토글 버튼</span>
+        </header>
+        <section class="sub_header_section">
+            <h2>현재 페이지와 연결되어 있는 메뉴 이름</h2>
+            <ul class="breadcrum_list">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="현재 페이지 경로">현재 페이지와 연결되어 있는 메뉴 이름</a></li>
+            </ul>
+        </section>
+        <section class="content_section">
+            <div class="content_row_1">
+                <img src="images/s_images/introduce_01.png" alt="">
+                <h3>플랫 디자인</h3>
+                <p>...텍스트 생략...</p>
+            </div>
+            <div class="contemt_row_2">
+                <article>
+                    <img src="images/s_images/info_icon_02.png" alt="">
+                    <h4>텍스트를 이용하는 방법</h4>
+                    <p>...텍스트 생략...</p>
+                </article>
+                <article>
+                    <img src="images/s_images/info_icon_03.png" alt="">
+                    <h4>그림을 이용하는 방법</h4>
+                    <p>...텍스트 생략...</p>
+                </article>
+                <article>
+                    <img src="images/s_images/info_icon_04.png" alt="">
+                    <h4>플랫 디자인의 미래</h4>
+                    <div class="para">
+                        <p>...텍스트 생략...</p>
+                        <p>...텍스트 생략...</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>copyrigth&copy;2014.flat design blog all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

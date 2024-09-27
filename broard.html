@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1, maximum-scale=1, user-scalable=1">
+    <title>FLAT DESIGN - 문의 사항</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="shortcuticon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/flat-design-touch.png">
+    <script src="js/jquery.min.js"></script>
+    <style>
+        /* 모바일용 CSS */
+        /* 서브 헤더 영역 */
+        .sub_header_section{
+            order:3;
+            padding:48px 0;
+            padding:3.000rem 0;
+            text-align: center;
+            background: #219af7;
+        }
+
+        .sub_header_section h2{
+            margin-bottom: 12px;
+            margin-bottom: 0.750rem;
+            font-size: 1.313em;
+            font-size: 1.313rem;
+            color:#fff;
+        }
+
+        .breadcrum_list li{
+            display: inline;
+            font-size: 0.813em;
+            font-size: 0.813rem;
+            font-weight: bold;
+        }
+        /* 콘텐츠 영역 CSS */
+        .content_section{
+            order:4;
+            padding:20px;
+            padding:1.250rem;
+            background: #fff;;
+        }
+        /* 푸터 영역 CSS */
+        .footer{
+            order: 5;
+        }
+        /* 기본 CSS */
+        #wrap{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        #wrap section{
+            box-sizing: border-box;
+        }
+        /* 태블릿용 CSS */
+        @media all and (min-width: 768px){
+            .content_section{
+                padding: 40px;
+                padding: 2.500rem;
+            }
+        }
+        /* PC용 CSS */
+        @media all and (min-width: 960px){
+            #wrap{
+                position: relative;
+                width: 90%;
+            }
+            /* 서브 헤더 영역 */
+            .sub_header_section{
+                order: 2;
+            }
+
+            /* 콘텐츠 영역  */
+            .content_section{
+                order: 3;
+                padding: 60px;
+                padding: 3.750rem;
+            }
+            /* 푸터 영역 */
+            .footer{
+                order: 4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section class="info_section">
+            <ul class="info_list">
+                <li><a href="index.html"><img src="images/s_images/info_icon_01.png" alt=""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_02.png" alt=""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_03.png" alt=""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_04.png" alt=""></a></li>
+            </ul>
+        </section>
+        <header class="header">
+            <h1 class="logo">
+                <a href="index.html">flat<br>design</a>
+            </h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="index.html">홈</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="introduce.html">플랫 디자인이란?</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="gallery.html">갤러리</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="broard.html">문희 사항</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                </ul>
+            </nav>
+            <span class="menu_toggle_btn">전체 메뉴 토글 버튼</span>
+        </header>
+        <section class="sub_header_section">
+            <h2>현재 페이지와 연결되어 있는 메뉴 이름</h2>
+            <ul class="breadcrum_list">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="현재 페이지 경로">현재 페이지와 연결되어 있는 메뉴 이름</a></li>
+            </ul>
+        </section>
+        <section class="content_section">
+            <div class="content_row_1">
+                <table class="board_table">
+                    <caption>문의사항 게시판</caption>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="">저는 누굴까요?</a></td>
+                            <td>FLAT DESIGN</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="">BLOG에서 다양한 정보를 만나보세요</a></td>
+                            <td>FLAT DESIGN</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="">FLAT DESIGN은 원색을 강조합니다.</a></td>
+                            <td>FLAT DESIGN</td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="">홈페이지 리뉴얼 소식</a></td>
+                            <td>FLAT DESIGN</td>
+                            <td>96</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="">안녕하세요 홈페이지를 오픈했습니다.</a></td>
+                            <td>FLAT DESIGN</td>
+                            <td>123</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="contnt_row_2">
+
+            </div>
+            <div class="content_row_3">
+
+            </div>
+        </section>
+        <footer class="footer">
+            <p>copyrigth&copy;2014.flat design blog all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
