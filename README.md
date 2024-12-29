@@ -1,5 +1,5 @@
 # Responsive Web
-Do it! 책을 활용해 반응형 웹 공부한다.
+Do it! 책을 활용해 반응형 웹페이지를 만들어 보며 HTML, CSS 사용에 익숙해지기
 
 <br>
 
